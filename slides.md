@@ -66,6 +66,8 @@ Easier to understand
 
 ## Smaller teams
 
+<video src="/home/clement/Images/lol/puppy-head.webm" loop></video>
+
 <details>
 Small autonomous teams. New projects can easily be started by cross-functional
 teams, less time wasted on synchronisation
@@ -74,6 +76,8 @@ teams, less time wasted on synchronisation
 ------------------------------------------------------------------------------
 
 ## Independent lifecycles
+
+<video src="/home/clement/Images/lol/hamsters.webm" loop></video>
 
 <details>
 Independent release schedules, independent deployments. No more "stop the
@@ -84,27 +88,9 @@ Maybe the most important thing to understand about microservices
 
 ------------------------------------------------------------------------------
 
-## Polyglot tech stacks
-
-<details>
-Language best suited for the task. Maybe it's a bash script to pilot a C
-reverse proxy, or a JEE API, or a small scala service
-</details>
-
-------------------------------------------------------------------------------
-
-## Good for polyglot persistence
-
-<details>
-no more central data model
-end of the monolithic SQL db
-multiple data stores with different capabilities / scaling needs and
-possibilities
-</details>
-
-------------------------------------------------------------------------------
-
 ## Compartimentalize failure
+
+<video src="/home/clement/Images/lol/exploding-poo.webm" loop></video>
 
 <details>
 If a part of your system is hanging (typically HTTP thread exhaustion, it
@@ -123,13 +109,128 @@ doesn't bring your whole system down)
 
 ------------------------------------------------------------------------------
 
-## Don't use microservices if
+## Polyglot tech stacks
 
 <details>
-  - complexity
+Language best suited for the task. Maybe it's a bash script to pilot a C
+reverse proxy, or a JEE API, or a small scala service
+</details>
+
+------------------------------------------------------------------------------
+
+## JEE
+
+<details>
+Main API complex HTTP API & data models
+</details>
+
+------------------------------------------------------------------------------
+
+## JSE
+
+<details>
+Simple queue management, no HTTP API
+will be eventually replaced by something more suited with streams
+like akka streams
+</details>
+
+------------------------------------------------------------------------------
+
+## Scala
+
+<details>
+data management api. good modelisation, good perf
+</details>
+
+------------------------------------------------------------------------------
+
+## Node Js
+
+<details>
+small services, was very good at managing push stuff at some point.
+slowly rewritten as well
+</details>
+
+------------------------------------------------------------------------------
+
+## Ruby & bash
+
+<details>
+good for system scripting
+</details>
+
+------------------------------------------------------------------------------
+
+## Rust
+
+<details>
+good fit for many things, will partly replace other languages
+small footprint, easy to deploy
+</details>
+
+------------------------------------------------------------------------------
+
+
+## Try new things
+
+<details>
+some services are less critical, they're the best place to experiment without
+risk: I've written stuff in go, no I know why I won't use it any more
+</details>
+
+------------------------------------------------------------------------------
+
+## Polyglot persistence
+
+------------------------------------------------------------------------------
+
+## No central data model
+
+<details>
+no more central data model
+</details>
+
+------------------------------------------------------------------------------
+
+## Drop your SQL monolith
+
+<video src="/home/clement/Images/lol/bungee.webm" loop></video>
+
+------------------------------------------------------------------------------
+
+## Different datastore scaling
+
+<details>
+multiple data stores with different capabilities / scaling needs and
+possibilities
+</details>
+
+------------------------------------------------------------------------------
+
+# <small>Keep your monolith</small>
+
+<video src="/home/clement/Images/lol/2001.webm" loop></video>
+
+<details>
+There are reasons to stay on a monolithic arch
+</details>
+
+------------------------------------------------------------------------------
+
+## Increased complexity
+
+<details>
   - more deployments
   - hidden failure modes
 </details>
+
+------------------------------------------------------------------------------
+
+## More deployments
+
+------------------------------------------------------------------------------
+
+## Tricky failure modes
 
 ------------------------------------------------------------------------------
 
@@ -144,6 +245,8 @@ There are prerequisites
 
 ## Rapid provisionning
 
+<video src="/home/clement/Images/lol/cats.webm" loop></video>
+
 <details>
 Lots of applications, designed to ease scale out => you need to make room for
 a new instance very quickly
@@ -153,13 +256,17 @@ a new instance very quickly
 
 ## Basic monitoring
 
+<video src="/home/clement/Images/lol/computer-glasses-code.webm" loop></video>
+
 <details>
 Lots of application, you need to know when one fails.
 </details>
 
 ------------------------------------------------------------------------------
 
-## Rapid application deployment
+# <small>Rapid application deployment</small>
+
+![](./assets/catapult.gif)
 
 
 <details>
@@ -180,14 +287,23 @@ microservices architectures
 
 ## Automate everything
 
-<details>
-  - automate deployments
-  - automate builds
-  - build / configuration separation
-  - independent apps
-  - test environnements
-  - service dependencies
-</details>
+<video src="/home/clement/Images/lol/chain.webm" loop></video>
+
+------------------------------------------------------------------------------
+
+## Automate builds
+
+------------------------------------------------------------------------------
+
+## <small>Automate config injection</small>
+
+------------------------------------------------------------------------------
+
+## Automate deployments
+
+------------------------------------------------------------------------------
+
+## <small>Automate whole env provisionning</small>
 
 ------------------------------------------------------------------------------
 
@@ -201,13 +317,31 @@ end of the "SQL store + multiple applications writing in it"
 
 ------------------------------------------------------------------------------
 
+## Make state explicit
+
+------------------------------------------------------------------------------
+
+## No persistent local state
+
+------------------------------------------------------------------------------
+
+## Put sessions in a proper DB
+
+------------------------------------------------------------------------------
+
+## Use S3 for files
+
+------------------------------------------------------------------------------
+
 ## Use explicit synchronization
 
 <details>
-Each microservice is responsible for its own state
-no shared access to a DB
-end of the "SQL store + multiple applications writing in it"
+don't write your own transaction system in mongodb
 </details>
+
+------------------------------------------------------------------------------
+
+## <small>Use zk, etcd, consul for transactions</small>
 
 ------------------------------------------------------------------------------
 
@@ -216,6 +350,14 @@ end of the "SQL store + multiple applications writing in it"
 <details>
   Network is fragile, errors happen
 </details>
+
+------------------------------------------------------------------------------
+
+## Complexity is still here
+
+------------------------------------------------------------------------------
+
+## Complexity is outside the code
 
 ------------------------------------------------------------------------------
 
@@ -238,6 +380,44 @@ bad
 
 ------------------------------------------------------------------------------
 
+## Make boundaries explicit
+
+------------------------------------------------------------------------------
+
+## ORMs
+
+<details>
+"vietnam of computer science"
+</details>
+
+------------------------------------------------------------------------------
+
+## RMI
+
+<details>
+let's pretend the network doesn't exist
+</details>
+
+------------------------------------------------------------------------------
+
+## <small>Hidden complexity == tech dept</small>
+
+<details>
+if a system seems less complex than its domain, then there's accidental
+complexity hiding somewhere and you won't find it until it's too late
+</details>
+
+------------------------------------------------------------------------------
+
+## Hexagonal architecture
+
+<details>
+Each microservice or DB is an implementation. Clear zoning. Your topology
+manager does the plugging
+</details>
+
+------------------------------------------------------------------------------
+
 ## Know your topology
 
 <details>
@@ -251,15 +431,9 @@ describe your business model
 
 ## Make topology explicit
 
-<details>
-Don't use stacks that fake locality in order to ease the use of microservices.
-If you're hiding essential complexity, it can only be by creating accidental
-complexity
-</details>
-
 ------------------------------------------------------------------------------
 
-## Make micro-services topology-agnostic
+## <small>Make micro-services topology-agnostic</small>
 
 <details>
   - rabbitMQ instead of HTTP to make a service topology-agnostic
@@ -267,12 +441,7 @@ complexity
 
 ------------------------------------------------------------------------------
 
-## Complexity doesn't magically disappear
-
-<details>
-  - complexity exists at boundaries
-  - complexity lies in interactions
-</details>
+## Boundaries
 
 ------------------------------------------------------------------------------
 
@@ -299,7 +468,9 @@ complexity
 
 ------------------------------------------------------------------------------
 
-## Avoid language-specific serialization
+## Language-specific serde
+
+<video src="/home/clement/Images/lol/dog-stick-stuck.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
@@ -308,6 +479,8 @@ complexity
 ------------------------------------------------------------------------------
 
 ## Poor tooling and documentation
+
+<video src="/home/clement/Images/lol/hammer.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
@@ -337,14 +510,165 @@ complexity
 ## Avro
 
 <details>
-  apache serialization language
-  protocol definition
-  schema evolution
+serialization system
+best contendent for a greenfield project
 </details>
 
 ------------------------------------------------------------------------------
 
-## Evolution strategies
+## Schema definition language
+
+------------------------------------------------------------------------------
+
+<small>
+```json
+{"namespace": "example.avro",
+ "type": "record",
+ "name": "User",
+ "fields": [
+     { "name": "name"
+     , "type": "string"
+     },
+     { "name": "favorite_number"
+     , "type": ["int", "null"]
+     },
+     { "name": "favorite_color"
+     , "type": ["string", "null"]
+     }
+ ]
+}
+```
+</small>
+
+------------------------------------------------------------------------------
+
+## Compact serialization
+
+<details>
+clever binary encoding
+separated schema for better compression
+</details>
+
+
+------------------------------------------------------------------------------
+
+<small><small><small><small>
+```json
+{"name": "Douglas",   "favorite_number": 42, "favorite_color": "red"}
+```
+
+```json
+{"name": "Launcelot", "favorite_number": 12, "favorite_color": "blue" }
+```
+
+```
+  Offset  00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+00000000  0E 44 6F 75 67 6C 61 73 54 06 72 65 64           .DouglasT.red   
+00000000  12 4C 61 75 6E 63 65 6C 6F 74 18 08 62 6C 75 65  .Launcelot..blue
+```
+</small></small></small></small>
+
+------------------------------------------------------------------------------
+
+## Cross-language
+
+<details>
+support in many languages
+</details>
+
+------------------------------------------------------------------------------
+
+## Cross-paradigm
+
+<details>
+deserializes to json
+codegen not mandatory
+</details>
+
+------------------------------------------------------------------------------
+
+## Partial reading
+
+------------------------------------------------------------------------------
+
+```javascript
+const resolver =
+  partialSchema
+    .createResolver(completeSchema);
+
+const partialMessage =
+  resolver
+    .fromBuffer(
+      completeBuffer,
+      resolver,
+      true);
+```
+
+------------------------------------------------------------------------------
+
+## Schema evolution
+
+------------------------------------------------------------------------------
+
+## Protocol definition
+
+------------------------------------------------------------------------------
+
+```json
+{
+  "namespace": "com.acme",
+  "protocol": "HelloWorld",
+  "doc": "Protocol Greetings",
+```
+
+------------------------------------------------------------------------------
+
+```json
+  "types": [
+    { "name": "Greeting",
+      "type": "record",
+      "fields": [
+        {"name": "message",
+         "type": "string"}
+      ]
+    },
+```
+
+------------------------------------------------------------------------------
+
+```json
+    {"name": "Curse",
+     "type": "error",
+      "fields": [
+        {"name": "message",
+         "type": "string"}
+      ]
+    }
+  ],
+```
+
+------------------------------------------------------------------------------
+
+```json
+
+  "messages": {
+    "hello": {
+      "doc": "Say hello.",
+      "request": [
+        {"name": "greeting",
+         "type": "Greeting" }],
+      "response": "Greeting",
+      "errors": ["Curse"]
+    }
+  }
+}
+```
+
+------------------------------------------------------------------------------
+
+# <small>Evolution strategies</small>
+
+![](./assets/evolution.gif)
 
 <details>
 proper definition of boundaries will make clear when evolutions are local or
@@ -353,7 +677,7 @@ modify the communication protocol
 
 ------------------------------------------------------------------------------
 
-## Stop-the-world
+# Stop-the-world
 
 <video src="/home/clement/Images/lol/well-fuck.webm" loop></video>
 
@@ -365,12 +689,30 @@ Stop everything, update, restart
 
 ------------------------------------------------------------------------------
 
-## Forward-compatible update
+## Two-step
+
+<video src="/home/clement/Images/lol/blind-juggling.webm" loop></video>
 
 <details>
 Deploy a forward compatible evolution service by service
 Remove transition code service by service
 </details>
+
+------------------------------------------------------------------------------
+
+## Wrap up
+
+------------------------------------------------------------------------------
+
+## Automate
+
+------------------------------------------------------------------------------
+
+## Don't share state
+
+------------------------------------------------------------------------------
+
+## Don't ignore boundaries
 
 # I'm online!
 

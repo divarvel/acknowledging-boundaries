@@ -1,6 +1,6 @@
-all: slides.html
+all: slides-light.html
 
-slides.html: slides.md template.html
+slides-light.html: slides.md template.html
 	pandoc -t dzslides \
 		   --template template.html \
 	       -s slides.md \
