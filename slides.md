@@ -219,6 +219,8 @@ There are reasons to stay on a monolithic arch
 
 ## Increased complexity
 
+<video src="/home/clement/Images/lol/rube-goldberg.webm" loop></video>
+
 <details>
   - more deployments
   - hidden failure modes
@@ -231,6 +233,12 @@ There are reasons to stay on a monolithic arch
 ------------------------------------------------------------------------------
 
 ## Tricky failure modes
+
+------------------------------------------------------------------------------
+
+## Bad network
+
+<video src="/home/clement/Images/lol/bad-network.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
@@ -363,6 +371,8 @@ don't write your own transaction system in mongodb
 
 ## Know your failure modes
 
+<video src="/home/clement/Images/lol/leopard-fall.webm" loop></video>
+
 <details>
 Where will your system break?
 If service A breaks, what will it take down?
@@ -441,6 +451,10 @@ describe your business model
 
 ------------------------------------------------------------------------------
 
+## RabbitMQ or HTTP?
+
+------------------------------------------------------------------------------
+
 ## Boundaries
 
 ------------------------------------------------------------------------------
@@ -476,6 +490,8 @@ describe your business model
 
 ## Breaks polyglotism
 
+<video src="/home/clement/Images/lol/breakage.webm" loop></video>
+
 ------------------------------------------------------------------------------
 
 ## Poor tooling and documentation
@@ -485,6 +501,35 @@ describe your business model
 ------------------------------------------------------------------------------
 
 ## Extended attack surface
+
+<video src="/home/clement/Images/lol/hippo-lions.webm" loop></video>
+
+------------------------------------------------------------------------------
+
+## Turing-complete serde
+
+<details>
+  is bad
+</details>
+
+------------------------------------------------------------------------------
+
+## XML
+
+<details>
+  nice support for schema and links
+  expensive parsing
+  hard to use, verbose, too powerful (security risk)
+</details>
+
+------------------------------------------------------------------------------
+
+## JSON
+
+<details>
+  decent support ~everywhere
+  simple enough
+</details>
 
 ------------------------------------------------------------------------------
 
@@ -713,6 +758,10 @@ Remove transition code service by service
 ------------------------------------------------------------------------------
 
 ## Don't ignore boundaries
+
+------------------------------------------------------------------------------
+
+## Try Clever Cloud
 
 # I'm online!
 
