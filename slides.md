@@ -7,7 +7,7 @@
 # Acknowledging boundaries
 
 
-<div style="margin-top: 300px; font-size: 1.5em; text-align: center;">
+<div style="margin-top: 200px; font-size: 1.5em; text-align: center;">
 Bring back consistency in your microservices architecture
 </div>
 
@@ -40,14 +40,6 @@ who's using them?
 
 ------------------------------------------------------------------------------
 
-<video src="/home/clement/Images/lol/but-why.webm" loop></video>
-
-<details>
-what's the problem with monoliths? Why add complexity?
-</details>
-
-------------------------------------------------------------------------------
-
 ## Separation of concerns
 
 <details>
@@ -60,41 +52,6 @@ Avoid duplication of business logic
 
 <details>
 Easier to understand
-</details>
-
-------------------------------------------------------------------------------
-
-## Smaller teams
-
-<video src="/home/clement/Images/lol/puppy-head.webm" loop></video>
-
-<details>
-Small autonomous teams. New projects can easily be started by cross-functional
-teams, less time wasted on synchronisation
-</details>
-
-------------------------------------------------------------------------------
-
-## Independent lifecycles
-
-<video src="/home/clement/Images/lol/hamsters.webm" loop></video>
-
-<details>
-Independent release schedules, independent deployments. No more "stop the
-world" releases
-
-Maybe the most important thing to understand about microservices
-</details>
-
-------------------------------------------------------------------------------
-
-## Compartimentalize failure
-
-<video src="/home/clement/Images/lol/exploding-poo.webm" loop></video>
-
-<details>
-If a part of your system is hanging (typically HTTP thread exhaustion, it
-doesn't bring your whole system down)
 </details>
 
 ------------------------------------------------------------------------------
@@ -192,42 +149,6 @@ no more central data model
 
 ------------------------------------------------------------------------------
 
-## Drop your SQL monolith
-
-<video src="/home/clement/Images/lol/bungee.webm" loop></video>
-
-------------------------------------------------------------------------------
-
-## Different datastore scaling
-
-<details>
-multiple data stores with different capabilities / scaling needs and
-possibilities
-</details>
-
-------------------------------------------------------------------------------
-
-# <small>Keep your monolith</small>
-
-<video src="/home/clement/Images/lol/2001.webm" loop></video>
-
-<details>
-There are reasons to stay on a monolithic arch
-</details>
-
-------------------------------------------------------------------------------
-
-## Increased complexity
-
-<video src="/home/clement/Images/lol/rube-goldberg.webm" loop></video>
-
-<details>
-  - more deployments
-  - hidden failure modes
-</details>
-
-------------------------------------------------------------------------------
-
 ## More deployments
 
 ------------------------------------------------------------------------------
@@ -236,38 +157,11 @@ There are reasons to stay on a monolithic arch
 
 ------------------------------------------------------------------------------
 
-## Bad network
-
-<video src="/home/clement/Images/lol/bad-network.webm" loop></video>
-
-------------------------------------------------------------------------------
-
 ## Can you afford microservices?
 
 <details>
 Are you ready for microservices ?
 There are prerequisites
-</details>
-
-------------------------------------------------------------------------------
-
-## Rapid provisionning
-
-<video src="/home/clement/Images/lol/cats.webm" loop></video>
-
-<details>
-Lots of applications, designed to ease scale out => you need to make room for
-a new instance very quickly
-</details>
-
-------------------------------------------------------------------------------
-
-## Basic monitoring
-
-<video src="/home/clement/Images/lol/computer-glasses-code.webm" loop></video>
-
-<details>
-Lots of application, you need to know when one fails.
 </details>
 
 ------------------------------------------------------------------------------
@@ -290,12 +184,6 @@ quality during traffic surges
 Go farther than the 3 core requirements. 12 factor is completely suited for
 microservices architectures
 </details>
-
-------------------------------------------------------------------------------
-
-## Automate everything
-
-<video src="/home/clement/Images/lol/chain.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
@@ -366,18 +254,6 @@ don't write your own transaction system in mongodb
 ------------------------------------------------------------------------------
 
 ## Complexity is outside the code
-
-------------------------------------------------------------------------------
-
-## Know your failure modes
-
-<video src="/home/clement/Images/lol/leopard-fall.webm" loop></video>
-
-<details>
-Where will your system break?
-If service A breaks, what will it take down?
-If service A is dead slow, what will it make slow?
-</details>
 
 ------------------------------------------------------------------------------
 
@@ -479,30 +355,6 @@ describe your business model
 ------------------------------------------------------------------------------
 
 ## Serialization
-
-------------------------------------------------------------------------------
-
-## Language-specific serde
-
-<video src="/home/clement/Images/lol/dog-stick-stuck.webm" loop></video>
-
-------------------------------------------------------------------------------
-
-## Breaks polyglotism
-
-<video src="/home/clement/Images/lol/breakage.webm" loop></video>
-
-------------------------------------------------------------------------------
-
-## Poor tooling and documentation
-
-<video src="/home/clement/Images/lol/hammer.webm" loop></video>
-
-------------------------------------------------------------------------------
-
-## Extended attack surface
-
-<video src="/home/clement/Images/lol/hippo-lions.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
@@ -718,29 +570,6 @@ const partialMessage =
 <details>
 proper definition of boundaries will make clear when evolutions are local or
 modify the communication protocol
-</details>
-
-------------------------------------------------------------------------------
-
-# Stop-the-world
-
-<video src="/home/clement/Images/lol/well-fuck.webm" loop></video>
-
-<details>
-more convenient if you can afford it (small number of parts affected, non
-critical part, small traffic).
-Stop everything, update, restart
-</details>
-
-------------------------------------------------------------------------------
-
-## Two-step
-
-<video src="/home/clement/Images/lol/blind-juggling.webm" loop></video>
-
-<details>
-Deploy a forward compatible evolution service by service
-Remove transition code service by service
 </details>
 
 ------------------------------------------------------------------------------
