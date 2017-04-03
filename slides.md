@@ -7,7 +7,7 @@
 # Acknowledging boundaries
 
 
-<div style="margin-top: 300px; font-size: 1.5em; text-align: center;">
+<div style="margin-top: 200px; font-size: 1.2em; text-align: center;">
 Bring back consistency in your microservices architecture
 </div>
 
