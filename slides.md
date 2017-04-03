@@ -24,7 +24,7 @@ Bring back consistency in your microservices architecture
 
 ![](assets/clever-16-9.png)
 
-<details>
+<details role="note">
 we used microservices early on, with one service less micro than the other
 </details>
 
@@ -32,7 +32,7 @@ we used microservices early on, with one service less micro than the other
 
 ## Microservices
 
-<details>
+<details role="note">
 show of hands
 who knows what they are?
 who's using them?
@@ -40,9 +40,9 @@ who's using them?
 
 ------------------------------------------------------------------------------
 
-<video src="/home/clement/Images/lol/but-why.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/but-why.webm" loop></video>
 
-<details>
+<details role="note">
 what's the problem with monoliths? Why add complexity?
 </details>
 
@@ -50,7 +50,7 @@ what's the problem with monoliths? Why add complexity?
 
 ## Separation of concerns
 
-<details>
+<details role="note">
 Avoid duplication of business logic
 </details>
 
@@ -58,7 +58,7 @@ Avoid duplication of business logic
 
 ## Smaller codebases
 
-<details>
+<details role="note">
 Easier to understand
 </details>
 
@@ -66,9 +66,9 @@ Easier to understand
 
 ## Smaller teams
 
-<video src="/home/clement/Images/lol/puppy-head.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/puppy-head.webm" loop></video>
 
-<details>
+<details role="note">
 Small autonomous teams. New projects can easily be started by cross-functional
 teams, less time wasted on synchronisation
 </details>
@@ -77,9 +77,9 @@ teams, less time wasted on synchronisation
 
 ## Independent lifecycles
 
-<video src="/home/clement/Images/lol/hamsters.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/hamsters.webm" loop></video>
 
-<details>
+<details role="note">
 Independent release schedules, independent deployments. No more "stop the
 world" releases
 
@@ -90,9 +90,9 @@ Maybe the most important thing to understand about microservices
 
 ## Compartimentalize failure
 
-<video src="/home/clement/Images/lol/exploding-poo.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/exploding-poo.webm" loop></video>
 
-<details>
+<details role="note">
 If a part of your system is hanging (typically HTTP thread exhaustion, it
 doesn't bring your whole system down)
 </details>
@@ -101,7 +101,7 @@ doesn't bring your whole system down)
 
 ## Allow different scaling policies
 
-<details>
+<details role="note">
   simple stateless part of the system can scale out
   big stateful part can scale up
   parts that are harder to scale are stripped down to control their growth
@@ -111,7 +111,7 @@ doesn't bring your whole system down)
 
 ## Polyglot tech stacks
 
-<details>
+<details role="note">
 Language best suited for the task. Maybe it's a bash script to pilot a C
 reverse proxy, or a JEE API, or a small scala service
 </details>
@@ -120,7 +120,7 @@ reverse proxy, or a JEE API, or a small scala service
 
 ## JEE
 
-<details>
+<details role="note">
 Main API complex HTTP API & data models
 </details>
 
@@ -128,7 +128,7 @@ Main API complex HTTP API & data models
 
 ## JSE
 
-<details>
+<details role="note">
 Simple queue management, no HTTP API
 will be eventually replaced by something more suited with streams
 like akka streams
@@ -138,7 +138,7 @@ like akka streams
 
 ## Scala
 
-<details>
+<details role="note">
 data management api. good modelisation, good perf
 </details>
 
@@ -146,7 +146,7 @@ data management api. good modelisation, good perf
 
 ## Node Js
 
-<details>
+<details role="note">
 small services, was very good at managing push stuff at some point.
 slowly rewritten as well
 </details>
@@ -155,7 +155,7 @@ slowly rewritten as well
 
 ## Ruby & bash
 
-<details>
+<details role="note">
 good for system scripting
 </details>
 
@@ -163,7 +163,7 @@ good for system scripting
 
 ## Rust
 
-<details>
+<details role="note">
 good fit for many things, will partly replace other languages
 small footprint, easy to deploy
 </details>
@@ -173,7 +173,7 @@ small footprint, easy to deploy
 
 ## Try new things
 
-<details>
+<details role="note">
 some services are less critical, they're the best place to experiment without
 risk: I've written stuff in go, no I know why I won't use it any more
 </details>
@@ -186,7 +186,7 @@ risk: I've written stuff in go, no I know why I won't use it any more
 
 ## No central data model
 
-<details>
+<details role="note">
 no more central data model
 </details>
 
@@ -194,13 +194,13 @@ no more central data model
 
 ## Drop your SQL monolith
 
-<video src="/home/clement/Images/lol/bungee.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/bungee.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
 ## Different datastore scaling
 
-<details>
+<details role="note">
 multiple data stores with different capabilities / scaling needs and
 possibilities
 </details>
@@ -209,9 +209,9 @@ possibilities
 
 # <small>Keep your monolith</small>
 
-<video src="/home/clement/Images/lol/2001.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/2001.webm" loop></video>
 
-<details>
+<details role="note">
 There are reasons to stay on a monolithic arch
 </details>
 
@@ -219,9 +219,9 @@ There are reasons to stay on a monolithic arch
 
 ## Increased complexity
 
-<video src="/home/clement/Images/lol/rube-goldberg.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/rube-goldberg.webm" loop></video>
 
-<details>
+<details role="note">
   - more deployments
   - hidden failure modes
 </details>
@@ -238,13 +238,13 @@ There are reasons to stay on a monolithic arch
 
 ## Bad network
 
-<video src="/home/clement/Images/lol/bad-network.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/bad-network.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
 ## Can you afford microservices?
 
-<details>
+<details role="note">
 Are you ready for microservices ?
 There are prerequisites
 </details>
@@ -253,9 +253,9 @@ There are prerequisites
 
 ## Rapid provisionning
 
-<video src="/home/clement/Images/lol/cats.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/cats.webm" loop></video>
 
-<details>
+<details role="note">
 Lots of applications, designed to ease scale out => you need to make room for
 a new instance very quickly
 </details>
@@ -264,9 +264,9 @@ a new instance very quickly
 
 ## Basic monitoring
 
-<video src="/home/clement/Images/lol/computer-glasses-code.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/computer-glasses-code.webm" loop></video>
 
-<details>
+<details role="note">
 Lots of application, you need to know when one fails.
 </details>
 
@@ -277,7 +277,7 @@ Lots of application, you need to know when one fails.
 ![](./assets/catapult.gif)
 
 
-<details>
+<details role="note">
 Easy rollback / restart on failure. Scaling out quickly reduces the degraded
 quality during traffic surges
 </details>
@@ -286,7 +286,7 @@ quality during traffic surges
 
 ## 12factor
 
-<details>
+<details role="note">
 Go farther than the 3 core requirements. 12 factor is completely suited for
 microservices architectures
 </details>
@@ -295,7 +295,7 @@ microservices architectures
 
 ## Automate everything
 
-<video src="/home/clement/Images/lol/chain.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/chain.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
@@ -317,7 +317,7 @@ microservices architectures
 
 ## Don't share state
 
-<details>
+<details role="note">
 Each microservice is responsible for its own state
 no shared access to a DB
 end of the "SQL store + multiple applications writing in it"
@@ -343,7 +343,7 @@ end of the "SQL store + multiple applications writing in it"
 
 ## Use explicit synchronization
 
-<details>
+<details role="note">
 don't write your own transaction system in mongodb
 </details>
 
@@ -355,7 +355,7 @@ don't write your own transaction system in mongodb
 
 ## The hard parts
 
-<details>
+<details role="note">
   Network is fragile, errors happen
 </details>
 
@@ -371,9 +371,9 @@ don't write your own transaction system in mongodb
 
 ## Know your failure modes
 
-<video src="/home/clement/Images/lol/leopard-fall.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/leopard-fall.webm" loop></video>
 
-<details>
+<details role="note">
 Where will your system break?
 If service A breaks, what will it take down?
 If service A is dead slow, what will it make slow?
@@ -383,7 +383,7 @@ If service A is dead slow, what will it make slow?
 
 ## Know if a call is local or distant
 
-<details>
+<details role="note">
 If you feel like you're doing RPC everywhere, then your boundaries are likely
 bad
 </details>
@@ -396,7 +396,7 @@ bad
 
 ## ORMs
 
-<details>
+<details role="note">
 "vietnam of computer science"
 </details>
 
@@ -404,7 +404,7 @@ bad
 
 ## RMI
 
-<details>
+<details role="note">
 let's pretend the network doesn't exist
 </details>
 
@@ -412,7 +412,7 @@ let's pretend the network doesn't exist
 
 ## <small>Hidden complexity == tech dept</small>
 
-<details>
+<details role="note">
 if a system seems less complex than its domain, then there's accidental
 complexity hiding somewhere and you won't find it until it's too late
 </details>
@@ -421,7 +421,7 @@ complexity hiding somewhere and you won't find it until it's too late
 
 ## Hexagonal architecture
 
-<details>
+<details role="note">
 Each microservice or DB is an implementation. Clear zoning. Your topology
 manager does the plugging
 </details>
@@ -430,7 +430,7 @@ manager does the plugging
 
 ## Know your topology
 
-<details>
+<details role="note">
 You MUST know how services relate to each other, where network is involved.
 Semantic topology. a docker-compose.yml or a kubernetes JSON config file is
 not a proper way to define a topology, the same way that a makefile does not
@@ -445,7 +445,7 @@ describe your business model
 
 ## <small>Make micro-services topology-agnostic</small>
 
-<details>
+<details role="note">
   - rabbitMQ instead of HTTP to make a service topology-agnostic
 </details>
 
@@ -461,7 +461,7 @@ describe your business model
 
 ## Document interactions
 
-<details>
+<details role="note">
   - document and specify interactions
 </details>
 
@@ -469,7 +469,7 @@ describe your business model
 
 ## Know your protocols
 
-<details>
+<details role="note">
   - for HTTP, endpoints and representation structures
   - for message brokers, exchanges / queue names / topics / …
   - shared protocols description
@@ -484,31 +484,31 @@ describe your business model
 
 ## Language-specific serde
 
-<video src="/home/clement/Images/lol/dog-stick-stuck.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/dog-stick-stuck.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
 ## Breaks polyglotism
 
-<video src="/home/clement/Images/lol/breakage.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/breakage.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
 ## Poor tooling and documentation
 
-<video src="/home/clement/Images/lol/hammer.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/hammer.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
 ## Extended attack surface
 
-<video src="/home/clement/Images/lol/hippo-lions.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/hippo-lions.webm" loop></video>
 
 ------------------------------------------------------------------------------
 
 ## Turing-complete serde
 
-<details>
+<details role="note">
   is bad
 </details>
 
@@ -516,7 +516,7 @@ describe your business model
 
 ## XML
 
-<details>
+<details role="note">
   nice support for schema and links
   expensive parsing
   hard to use, verbose, too powerful (security risk)
@@ -526,7 +526,7 @@ describe your business model
 
 ## JSON
 
-<details>
+<details role="note">
   decent support ~everywhere
   simple enough
 </details>
@@ -535,7 +535,7 @@ describe your business model
 
 ## JSON schema
 
-<details>
+<details role="note">
   representation structure
 </details>
 
@@ -543,7 +543,7 @@ describe your business model
 
 ## Swagger / RAML
 
-<details>
+<details role="note">
   endpoints
   integrates document structure
   API explorer
@@ -554,7 +554,7 @@ describe your business model
 
 ## Avro
 
-<details>
+<details role="note">
 serialization system
 best contendent for a greenfield project
 </details>
@@ -589,7 +589,7 @@ best contendent for a greenfield project
 
 ## Compact serialization
 
-<details>
+<details role="note">
 clever binary encoding
 separated schema for better compression
 </details>
@@ -617,7 +617,7 @@ separated schema for better compression
 
 ## Cross-language
 
-<details>
+<details role="note">
 support in many languages
 </details>
 
@@ -625,7 +625,7 @@ support in many languages
 
 ## Cross-paradigm
 
-<details>
+<details role="note">
 deserializes to json
 codegen not mandatory
 </details>
@@ -715,7 +715,7 @@ const partialMessage =
 
 ![](./assets/evolution.gif)
 
-<details>
+<details role="note">
 proper definition of boundaries will make clear when evolutions are local or
 modify the communication protocol
 </details>
@@ -724,9 +724,9 @@ modify the communication protocol
 
 # Stop-the-world
 
-<video src="/home/clement/Images/lol/well-fuck.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/well-fuck.webm" loop></video>
 
-<details>
+<details role="note">
 more convenient if you can afford it (small number of parts affected, non
 critical part, small traffic).
 Stop everything, update, restart
@@ -736,9 +736,9 @@ Stop everything, update, restart
 
 ## Two-step
 
-<video src="/home/clement/Images/lol/blind-juggling.webm" loop></video>
+<video src="/Users/clementd/Projects/perso/gifs/blind-juggling.webm" loop></video>
 
-<details>
+<details role="note">
 Deploy a forward compatible evolution service by service
 Remove transition code service by service
 </details>
