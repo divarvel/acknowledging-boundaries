@@ -20,14 +20,6 @@ Bring back consistency in your microservices architecture
  - [clever cloud](http://clever-cloud.com)
 
 
--------------------------------------------
-
-![](assets/clever-16-9.png)
-
-<details role="note">
-we used microservices early on, with one service less micro than the other
-</details>
-
 ------------------------------------------------------------------------------
 
 ## Microservices
@@ -288,7 +280,9 @@ quality during traffic surges
 
 <details role="note">
 Go farther than the 3 core requirements. 12 factor is completely suited for
-microservices architectures
+microservices architectures.
+
+Aparté Clever sur not mandatory
 </details>
 
 ------------------------------------------------------------------------------
@@ -366,6 +360,22 @@ don't write your own transaction system in mongodb
 ------------------------------------------------------------------------------
 
 ## Complexity is outside the code
+
+------------------------------------------------------------------------------
+
+![spaghetti](./assets/spaghetti.png)
+
+------------------------------------------------------------------------------
+
+![lasagna](./assets/lasagna.png)
+
+------------------------------------------------------------------------------
+
+![ravioli](./assets/ravioli.png)
+
+------------------------------------------------------------------------------
+
+![wtf](./assets/hqdefault.jpg)
 
 ------------------------------------------------------------------------------
 
@@ -711,7 +721,13 @@ const partialMessage =
 
 ------------------------------------------------------------------------------
 
-# <small>Evolution strategies</small>
+## Strong schema
+
+<details role="note">Serialized data is not readable without the schema</details>
+
+------------------------------------------------------------------------------
+
+# <small style="color: black;">Evolution strategies</small>
 
 ![](./assets/evolution.gif)
 
