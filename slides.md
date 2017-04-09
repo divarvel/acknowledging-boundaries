@@ -410,7 +410,7 @@ let's pretend the network doesn't exist
 
 ------------------------------------------------------------------------------
 
-## <small>Hidden complexity == tech dept</small>
+## <small>Hidden complexity == tech debt</small>
 
 <details role="note">
 if a system seems less complex than its domain, then there's accidental
